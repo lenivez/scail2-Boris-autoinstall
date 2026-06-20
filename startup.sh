@@ -11,8 +11,4 @@ if [ ! -d "$NODE_DEST" ]; then
 else
     echo "comfyui-scail2-infinity уже установлена"
 fi
-echo "=== Запуск ComfyUI ==="
-cd /workspace/ComfyUI
-pkill -f "python.*main.py" 2>/dev/null || true
-sleep 2
-python main.py --listen 0.0.0.0 --port 3000 --disable-xformers
+echo "=== Готово! ==="
